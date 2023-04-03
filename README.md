@@ -17,7 +17,7 @@ This file provide information for below pointers:
 Open terminal and clone the project from branch "qa-assignment-rajendra-upadhyay"
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Rajendra-upadhyay/Backbase-QA-assignment.git
 ```
 
 Go to the project directory Backbase-QA-assignment
