@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Test Suite">
+<listeners>
+    <listener class-name="com.backbase.reporting.SetupWebReport"></listener>
+</listeners>
+    <test name="web test">
+        <classes>
+            <class name="com.backbase.webtest.ArticleCRUD"/>
+            <class name="com.backbase.webtest.ArticleActions"/>
+        </classes>
+    </test>
+</suite>

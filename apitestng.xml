@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="E2E Test Suite">
+    <listeners>
+        <listener class-name="com.backbase.reporting.SetupAPIReport"></listener>
+    </listeners>
+    <test name="Test Article CRUD and actions on article">
+        <classes>
+            <class name="com.backbase.apitest.ArticleCRUDTest"/>
+            <class name="com.backbase.apitest.ArticleActionsTest"/>
+        </classes>
+    </test>
+</suite>

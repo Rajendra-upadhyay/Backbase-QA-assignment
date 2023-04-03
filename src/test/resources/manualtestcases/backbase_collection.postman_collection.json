@@ -1,0 +1,3552 @@
+{
+	"info": {
+		"_postman_id": "9a1f39d4-3d7b-4765-8041-1cbdf8e911b9",
+		"name": "backbase_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3841437"
+	},
+	"item": [
+		{
+			"name": "signup_new_users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\",\"username\":\"rupadhyay\"}}"
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/users",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "signup_new_users",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\",\"username\":\"rupadhyay\"}}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/users",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 11:06:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47-6saWFJB14+czND2xZMxVyQ\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": {\n        \"username\": \"is already taken.\",\n        \"email\": \"is already taken.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "signin_user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json=JSON.parse(responseBody)\r",
+							"console.log(\"json response as:::\"+json)\r",
+							"console.log(\"user name: \"+json.user.username)\r",
+							"pm.environment.set(\"username\",json.user.username)\r",
+							"pm.environment.set(\"email\",json.user.email)\r",
+							"pm.environment.set(\"token\",json.user.token)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\"}}"
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/users/login",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "signin_user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\"}}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/users/login",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 11:05:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "284"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11c-o/dq5/EFpf4XV7lSlD8Gqw\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"rupadhyay\",\n        \"email\": \"rajendra.upadhayay@gmail.com\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MDk5MTM1LCJpYXQiOjE2Nzk5MTUxMzV9._z9fkqTC8SPaouT105jSw9VIDHi8oqx7JuqW_9RgsCY\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get user details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json=JSON.parse(responseBody)\r",
+							"console.log(\"json response as:::\"+json)\r",
+							"console.log(\"user name: \"+json.user.username)\r",
+							"pm.environment.set(\"username\",json.user.username)\r",
+							"pm.environment.set(\"email\",json.user.email)\r",
+							"pm.environment.set(\"token\",json.user.token)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\"}}"
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/user",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get user details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\"}}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/user",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 11:23:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "284"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11c-DD07NAl3UJWxw+vuxtzyuw\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"rupadhyay\",\n        \"email\": \"rajendra.upadhayay@gmail.com\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTAwMjI1LCJpYXQiOjE2Nzk5MTYyMjV9.ozB8PsFTYcH1_VY5K3tfFWHPh1hkkr2igdRBnv8fHR8\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create new article",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json=JSON.parse(responseBody)\r",
+							"console.log(\"json response as:::\"+json)\r",
+							"pm.environment.set(\"slug\",json.article.slug)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"article\": {\r\n    \"title\": \"How to train your dragon\",\r\n    \"description\": \"Ever wonder how?\",\r\n    \"body\": \"You have to believe\",\r\n    \"tagList\": [\"magic\", \"cool\", \"dragons\"]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create new article",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"article\": {\r\n    \"title\": \"How to train your dragon\",\r\n    \"description\": \"Ever wonder how?\",\r\n    \"body\": \"You have to believe\",\r\n    \"tagList\": [\"magic\", \"cool\", \"dragons\"]\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 13:03:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "423"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a7-N1qRFQqIN3udC5BbO3bzsQ\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"article\": {\n        \"slug\": \"how-to-train-your-dragon-cis79x\",\n        \"title\": \"How to train your dragon\",\n        \"description\": \"Ever wonder how?\",\n        \"body\": \"You have to believe\",\n        \"createdAt\": \"2023-03-27T13:03:15.058Z\",\n        \"updatedAt\": \"2023-03-27T13:03:15.058Z\",\n        \"tagList\": [\n            \"magic\",\n            \"cool\",\n            \"dragons\"\n        ],\n        \"favorited\": false,\n        \"favoritesCount\": 0,\n        \"author\": {\n            \"username\": \"rupadhyay\",\n            \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n            \"following\": false\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get article",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get article details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\"}}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 13:04:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "9343"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"247f-9RgMfMVTklG9XDedH+RrzA\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"articles\": [\n        {\n            \"slug\": \"how-to-train-your-dragon-cis79x\",\n            \"title\": \"How to train your dragon\",\n            \"description\": \"Ever wonder how?\",\n            \"body\": \"You have to believe\",\n            \"createdAt\": \"2023-03-27T13:03:15.058Z\",\n            \"updatedAt\": \"2023-03-27T13:03:15.058Z\",\n            \"tagList\": [\n                \"magic\",\n                \"cool\",\n                \"dragons\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"rupadhyay\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-ni3p2o\",\n            \"title\": \"ZARA COAT Updated\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T12:46:22.944Z\",\n            \"updatedAt\": \"2023-03-27T12:47:02.931Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-btk03b\",\n            \"title\": \"ZARA COATtesttagtest\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T12:46:22.810Z\",\n            \"updatedAt\": \"2023-03-27T12:46:22.810Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-kipig4\",\n            \"title\": \"ZARA COAT Updated\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T11:48:20.366Z\",\n            \"updatedAt\": \"2023-03-27T11:49:01.520Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-hvbbkv\",\n            \"title\": \"ZARA COATtesttagtest\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T11:48:20.360Z\",\n            \"updatedAt\": \"2023-03-27T11:48:20.360Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-x99nls\",\n            \"title\": \"ZARA COAT Updated\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T10:20:41.523Z\",\n            \"updatedAt\": \"2023-03-27T10:21:28.842Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-9clba6\",\n            \"title\": \"ZARA COATtesttagtest\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T10:20:41.522Z\",\n            \"updatedAt\": \"2023-03-27T10:20:41.522Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"abc-8h4zxn\",\n            \"title\": \"abc\",\n            \"description\": \"\",\n            \"body\": \"\",\n            \"createdAt\": \"2023-03-27T07:05:47.630Z\",\n            \"updatedAt\": \"2023-03-27T07:05:47.630Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"myfirsttitle-iai77x\",\n            \"title\": \"\",\n            \"description\": \"\",\n            \"body\": \"MyFirstText121\",\n            \"createdAt\": \"2023-03-27T04:13:01.026Z\",\n            \"updatedAt\": \"2023-03-27T04:14:16.794Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"pztest\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"aaa-kwkisu\",\n            \"title\": \"aaa\",\n            \"description\": \"aaa\",\n            \"body\": \"aaaa\",\n            \"createdAt\": \"2023-03-26T19:14:19.608Z\",\n            \"updatedAt\": \"2023-03-26T19:16:13.985Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"mepritam\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-siv3ia\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:45:24.323Z\",\n            \"updatedAt\": \"2023-03-26T18:45:25.490Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"ofgdis\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-qwsbxo\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:45:21.790Z\",\n            \"updatedAt\": \"2023-03-26T18:45:21.790Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"uqibzl\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-1lb707\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:44:08.189Z\",\n            \"updatedAt\": \"2023-03-26T18:44:09.410Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"qghftc\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-qat5cd\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:44:05.887Z\",\n            \"updatedAt\": \"2023-03-26T18:44:05.887Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"glhumy\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"about-chatgpt-3po3gm\",\n            \"title\": \"About ChatGPT\",\n            \"description\": \"An article on chatGPT\",\n            \"body\": \"ChatGPT was released just last year and is already transforming multiple industries. Its release has led to Google’s management team declaring a “code red” situation\\nThe chatbot was introduced by OpenAI, a San Francisco-based startup that has received another $10 billion in funding from Microsoft as the major tech giants get competitive in the field of AI\\nWhile ChatGPT is popular with some, others are concerned about the impact this tool will have on education and other industries. We explore what could be next for this disruptive technology\\nYou’ve likely heard about ChatGPT, a revolutionary new tool that has made headlines since it was released late last year. The AI-powered chatbot generates responses based on a prompt of user inputs. Users have utilized ChatGPT for everything from help with homework to writing poems. Some see ChatGPT as a direct threat to Google’s $149 billion search engine business, an area Google has been the leading player in for years. Microsoft recently confirmed an extension of its partnership with OpenAI, which comes with a $10 billion investment.\",\n            \"createdAt\": \"2023-03-26T18:34:05.414Z\",\n            \"updatedAt\": \"2023-03-26T18:34:05.414Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"mepritam\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-mtl3ko\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:33:53.412Z\",\n            \"updatedAt\": \"2023-03-26T18:33:54.549Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"bglytn\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-tjk1m1\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:33:51.071Z\",\n            \"updatedAt\": \"2023-03-26T18:33:51.071Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"rwpsfe\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-yj20n6\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:20:46.695Z\",\n            \"updatedAt\": \"2023-03-26T18:20:46.695Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"mjtebf\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"about-chatgpt-8yz21l\",\n            \"title\": \"About ChatGPT\",\n            \"description\": \"An article on chatGPT\",\n            \"body\": \"ChatGPT was released just last year and is already transforming multiple industries. Its release has led to Google’s management team declaring a “code red” situation\\nThe chatbot was introduced by OpenAI, a San Francisco-based startup that has received another $10 billion in funding from Microsoft as the major tech giants get competitive in the field of AI\\nWhile ChatGPT is popular with some, others are concerned about the impact this tool will have on education and other industries. We explore what could be next for this disruptive technology\\nYou’ve likely heard about ChatGPT, a revolutionary new tool that has made headlines since it was released late last year. The AI-powered chatbot generates responses based on a prompt of user inputs. Users have utilized ChatGPT for everything from help with homework to writing poems. Some see ChatGPT as a direct threat to Google’s $149 billion search engine business, an area Google has been the leading player in for years. Microsoft recently confirmed an extension of its partnership with OpenAI, which comes with a $10 billion investment.\",\n            \"createdAt\": \"2023-03-26T18:18:54.326Z\",\n            \"updatedAt\": \"2023-03-26T18:18:54.326Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"mepritam\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-avs4km\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:18:42.855Z\",\n            \"updatedAt\": \"2023-03-26T18:18:42.855Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"btyqny\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        }\n    ],\n    \"articlesCount\": 29330\n}"
+				}
+			]
+		},
+		{
+			"name": "update article",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"article\": {\r\n    \"title\": \"Did you train your dragon test editing?\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles",
+						"{{slug}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update article1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"article\": {\r\n    \"title\": \"Did you train your dragon?\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles/test-article-title-xwgnik",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles",
+								"test-article-title-xwgnik"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 13:18:03 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "424"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a8-HaOHgbBhQq9amq9Li1PNGQ\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"article\": {\n        \"slug\": \"test-article-title-xwgnik\",\n        \"title\": \"Did you train your dragon?\",\n        \"description\": \"this title is related to testing editing\",\n        \"body\": \"Test description message\",\n        \"createdAt\": \"2023-03-27T13:15:22.936Z\",\n        \"updatedAt\": \"2023-03-27T13:18:03.907Z\",\n        \"tagList\": [],\n        \"favorited\": false,\n        \"favoritesCount\": 0,\n        \"author\": {\n            \"username\": \"rupadhyay\",\n            \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n            \"following\": false\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete article",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"article\": {\r\n    \"title\": \"Did you train your dragon?\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles",
+						"{{slug}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete article",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"article\": {\r\n    \"title\": \"Did you train your dragon?\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles/test-article-title-xwgnik",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles",
+								"test-article-title-xwgnik"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 13:19:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a-oQDOV50e1MN2H/N8GYi+8w\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "get article by slug",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json=JSON.parse(responseBody)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\"}}"
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles",
+						"{{slug}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get article by slug",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user\":{\"email\":\"rajendra.upadhayay@gmail.com\",\"password\":\"Test@1234\"}}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles",
+								"{{slug}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:20:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "423"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a7-1B/Ut6wc+ovfoNWoehmraw\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"article\": {\n        \"slug\": \"how-to-train-your-dragon-yv02hv\",\n        \"title\": \"How to train your dragon\",\n        \"description\": \"Ever wonder how?\",\n        \"body\": \"You have to believe\",\n        \"createdAt\": \"2023-03-27T14:20:02.086Z\",\n        \"updatedAt\": \"2023-03-27T14:20:02.086Z\",\n        \"tagList\": [\n            \"magic\",\n            \"cool\",\n            \"dragons\"\n        ],\n        \"favorited\": false,\n        \"favoritesCount\": 0,\n        \"author\": {\n            \"username\": \"rupadhyay\",\n            \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n            \"following\": false\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create comment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var json=JSON.parse(responseBody)\r",
+							"pm.environment.set(\"id\",json.comment.id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"comment\":{\"body\":\"very nice article\"}}"
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}/comments",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles",
+						"{{slug}}",
+						"comments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create comment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"comment\":{\"body\":\"very nice article\"}}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}/comments",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles",
+								"{{slug}}",
+								"comments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:29:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e7-ZFbUxjYQ7OpxqNWefglMBQ\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"comment\": {\n        \"id\": \"6421a83d2092cfc6068ee1ef\",\n        \"body\": \"very nice article\",\n        \"createdAt\": \"2023-03-27T14:29:17.853Z\",\n        \"author\": {\n            \"username\": \"rupadhyay\",\n            \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n            \"following\": false\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get comments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}/comments",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles",
+						"{{slug}}",
+						"comments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get comments",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}/comments",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles",
+								"{{slug}}",
+								"comments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:38:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-XsoJODQQFZe0ULNrY6PKOw\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"comments\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "delete comments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/register"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}/comments/{{id}}",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles",
+						"{{slug}}",
+						"comments",
+						"{{id}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete comments",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/register"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles/{{slug}}/comments/{{id}}",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles",
+								"{{slug}}",
+								"comments",
+								"{{id}}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:39:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a-oQDOV50e1MN2H/N8GYi+8w\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "paginated list1: https://qa-task.backbasecloud.com/api/articles?limit=10&offset=0",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"e4e-5Po2krdEHEg9Sc/6dhaLGQ\""
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTExNjY2LCJpYXQiOjE2Nzk5Mjc2NjZ9.B1zv6SCXcG_PSU6NDfSbdxwxvUsMI_nbkgKLuPoFMdI"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles?limit=10&offset=0",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "paginated list1: https://qa-task.backbasecloud.com/api/articles?limit=10&offset=0",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "if-none-match",
+								"value": "W/\"e4e-5Po2krdEHEg9Sc/6dhaLGQ\""
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTExNjY2LCJpYXQiOjE2Nzk5Mjc2NjZ9.B1zv6SCXcG_PSU6NDfSbdxwxvUsMI_nbkgKLuPoFMdI"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles?limit=10&offset=0",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:47:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3727"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e8f-gWZdKmE/1fcKmMmRnipbXQ\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"articles\": [\n        {\n            \"slug\": \"test-article-title-2-e0z39u\",\n            \"title\": \"test article title 2\",\n            \"description\": \"this is about test article 2\",\n            \"body\": \"this is test description for 2\",\n            \"createdAt\": \"2023-03-27T14:45:54.939Z\",\n            \"updatedAt\": \"2023-03-27T14:45:54.939Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"rupadhyay\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"test-article-title-usndra\",\n            \"title\": \"test article title edit\",\n            \"description\": \"this title is about testing edit \",\n            \"body\": \"test description of the article edit\",\n            \"createdAt\": \"2023-03-27T14:24:12.430Z\",\n            \"updatedAt\": \"2023-03-27T14:35:49.529Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"rupadhyay\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"how-to-train-your-dragon-yv02hv\",\n            \"title\": \"How to train your dragon\",\n            \"description\": \"Ever wonder how?\",\n            \"body\": \"You have to believe\",\n            \"createdAt\": \"2023-03-27T14:20:02.086Z\",\n            \"updatedAt\": \"2023-03-27T14:39:05.701Z\",\n            \"tagList\": [\n                \"magic\",\n                \"cool\",\n                \"dragons\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"rupadhyay\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"idehi-qlvi27\",\n            \"title\": \"idehi\",\n            \"description\": \"erzxxuulrl\",\n            \"body\": \"tcoyorcdkh\",\n            \"createdAt\": \"2023-03-27T13:07:28.346Z\",\n            \"updatedAt\": \"2023-03-27T13:07:28.475Z\",\n            \"tagList\": null,\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"deepak\",\n                \"bio\": \"riyepovvrq\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"itbvjpf-fmh4vt\",\n            \"title\": \"fmydp\",\n            \"description\": null,\n            \"body\": null,\n            \"createdAt\": \"2023-03-27T13:07:27.472Z\",\n            \"updatedAt\": \"2023-03-27T13:07:27.578Z\",\n            \"tagList\": null,\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"deepak\",\n                \"bio\": \"riyepovvrq\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"rtvckf-nqywgs\",\n            \"title\": \"rtvckf\",\n            \"description\": \"ligwryepzx\",\n            \"body\": \"tmwwelehl\",\n            \"createdAt\": \"2023-03-27T13:07:26.551Z\",\n            \"updatedAt\": \"2023-03-27T13:07:26.551Z\",\n            \"tagList\": null,\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"deepak\",\n                \"bio\": \"riyepovvrq\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"qhdnao-k3xso8\",\n            \"title\": \"qhdnao\",\n            \"description\": \"sshtmooffp\",\n            \"body\": \"hwjwiflnmd\",\n            \"createdAt\": \"2023-03-27T13:07:25.566Z\",\n            \"updatedAt\": \"2023-03-27T13:07:25.815Z\",\n            \"tagList\": null,\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"deepak\",\n                \"bio\": \"riyepovvrq\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"jnsakwz-fpd2uh\",\n            \"title\": \"jnsakwz\",\n            \"description\": \"rzqxbfpkl\",\n            \"body\": \"cnlrczcaf\",\n            \"createdAt\": \"2023-03-27T13:07:25.249Z\",\n            \"updatedAt\": \"2023-03-27T13:07:25.249Z\",\n            \"tagList\": null,\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"deepak\",\n                \"bio\": \"riyepovvrq\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"nntcmvq-19sb3l\",\n            \"title\": \"nntcmvq\",\n            \"description\": \"apdqgurilg\",\n            \"body\": \"mirehlu\",\n            \"createdAt\": \"2023-03-27T13:07:24.541Z\",\n            \"updatedAt\": \"2023-03-27T13:07:24.897Z\",\n            \"tagList\": null,\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"deepak\",\n                \"bio\": \"riyepovvrq\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"lxunjh-vr33xt\",\n            \"title\": \"lxunjh\",\n            \"description\": \"oopotkyvm\",\n            \"body\": \"rjymuej\",\n            \"createdAt\": \"2023-03-27T13:07:23.921Z\",\n            \"updatedAt\": \"2023-03-27T13:07:24.206Z\",\n            \"tagList\": null,\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"deepak\",\n                \"bio\": \"riyepovvrq\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        }\n    ],\n    \"articlesCount\": 29341\n}"
+				}
+			]
+		},
+		{
+			"name": "paginated list2: https://qa-task.backbasecloud.com/api/articles?limit=10&offset=10",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTExNjY2LCJpYXQiOjE2Nzk5Mjc2NjZ9.B1zv6SCXcG_PSU6NDfSbdxwxvUsMI_nbkgKLuPoFMdI"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles?limit=10&offset=10",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "paginated list2: https://qa-task.backbasecloud.com/api/articles?limit=10&offset=10",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTExNjY2LCJpYXQiOjE2Nzk5Mjc2NjZ9.B1zv6SCXcG_PSU6NDfSbdxwxvUsMI_nbkgKLuPoFMdI"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles?limit=10&offset=10",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:47:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3640"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e38-aGH3a6FKZxa0/lohLMIbjA\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"articles\": [\n        {\n            \"slug\": \"sndiidb-dehvd3\",\n            \"title\": \"sndiidb\",\n            \"description\": \"ksppkeh\",\n            \"body\": \"umxskjgvei\",\n            \"createdAt\": \"2023-03-27T13:07:23.112Z\",\n            \"updatedAt\": \"2023-03-27T13:07:23.433Z\",\n            \"tagList\": null,\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"deepak\",\n                \"bio\": \"riyepovvrq\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"how-to-train-your-dragon-cis79x\",\n            \"title\": \"How to train your dragon\",\n            \"description\": \"Ever wonder how?\",\n            \"body\": \"You have to believe\",\n            \"createdAt\": \"2023-03-27T13:03:15.058Z\",\n            \"updatedAt\": \"2023-03-27T13:03:15.058Z\",\n            \"tagList\": [\n                \"magic\",\n                \"cool\",\n                \"dragons\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"rupadhyay\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-ni3p2o\",\n            \"title\": \"ZARA COAT Updated\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T12:46:22.944Z\",\n            \"updatedAt\": \"2023-03-27T12:47:02.931Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-btk03b\",\n            \"title\": \"ZARA COATtesttagtest\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T12:46:22.810Z\",\n            \"updatedAt\": \"2023-03-27T12:46:22.810Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-kipig4\",\n            \"title\": \"ZARA COAT Updated\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T11:48:20.366Z\",\n            \"updatedAt\": \"2023-03-27T11:49:01.520Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-hvbbkv\",\n            \"title\": \"ZARA COATtesttagtest\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T11:48:20.360Z\",\n            \"updatedAt\": \"2023-03-27T11:48:20.360Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-x99nls\",\n            \"title\": \"ZARA COAT Updated\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T10:20:41.523Z\",\n            \"updatedAt\": \"2023-03-27T10:21:28.842Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"zara-coattesttagtest-9clba6\",\n            \"title\": \"ZARA COATtesttagtest\",\n            \"description\": \"\",\n            \"body\": \"test desc\",\n            \"createdAt\": \"2023-03-27T10:20:41.522Z\",\n            \"updatedAt\": \"2023-03-27T10:20:41.522Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"abc-8h4zxn\",\n            \"title\": \"abc\",\n            \"description\": \"\",\n            \"body\": \"\",\n            \"createdAt\": \"2023-03-27T07:05:47.630Z\",\n            \"updatedAt\": \"2023-03-27T07:05:47.630Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"parvdupdated\",\n                \"bio\": \"\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"myfirsttitle-iai77x\",\n            \"title\": \"\",\n            \"description\": \"\",\n            \"body\": \"MyFirstText121\",\n            \"createdAt\": \"2023-03-27T04:13:01.026Z\",\n            \"updatedAt\": \"2023-03-27T04:14:16.794Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"pztest\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        }\n    ],\n    \"articlesCount\": 29341\n}"
+				}
+			]
+		},
+		{
+			"name": "paginated list3: https://qa-task.backbasecloud.com/api/articles?limit=10&offset=20",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTExNjY2LCJpYXQiOjE2Nzk5Mjc2NjZ9.B1zv6SCXcG_PSU6NDfSbdxwxvUsMI_nbkgKLuPoFMdI"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles?limit=10&offset=20",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "paginated list3: https://qa-task.backbasecloud.com/api/articles?limit=10&offset=20",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTExNjY2LCJpYXQiOjE2Nzk5Mjc2NjZ9.B1zv6SCXcG_PSU6NDfSbdxwxvUsMI_nbkgKLuPoFMdI"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles?limit=10&offset=20",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:47:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5739"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"166b-cVC3TPY+i+mudvS1LPRUFg\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"articles\": [\n        {\n            \"slug\": \"aaa-kwkisu\",\n            \"title\": \"aaa\",\n            \"description\": \"aaa\",\n            \"body\": \"aaaa\",\n            \"createdAt\": \"2023-03-26T19:14:19.608Z\",\n            \"updatedAt\": \"2023-03-26T19:16:13.985Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"mepritam\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-siv3ia\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:45:24.323Z\",\n            \"updatedAt\": \"2023-03-26T18:45:25.490Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"ofgdis\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-qwsbxo\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:45:21.790Z\",\n            \"updatedAt\": \"2023-03-26T18:45:21.790Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"uqibzl\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-1lb707\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:44:08.189Z\",\n            \"updatedAt\": \"2023-03-26T18:44:09.410Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"qghftc\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-qat5cd\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:44:05.887Z\",\n            \"updatedAt\": \"2023-03-26T18:44:05.887Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"glhumy\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"about-chatgpt-3po3gm\",\n            \"title\": \"About ChatGPT\",\n            \"description\": \"An article on chatGPT\",\n            \"body\": \"ChatGPT was released just last year and is already transforming multiple industries. Its release has led to Google’s management team declaring a “code red” situation\\nThe chatbot was introduced by OpenAI, a San Francisco-based startup that has received another $10 billion in funding from Microsoft as the major tech giants get competitive in the field of AI\\nWhile ChatGPT is popular with some, others are concerned about the impact this tool will have on education and other industries. We explore what could be next for this disruptive technology\\nYou’ve likely heard about ChatGPT, a revolutionary new tool that has made headlines since it was released late last year. The AI-powered chatbot generates responses based on a prompt of user inputs. Users have utilized ChatGPT for everything from help with homework to writing poems. Some see ChatGPT as a direct threat to Google’s $149 billion search engine business, an area Google has been the leading player in for years. Microsoft recently confirmed an extension of its partnership with OpenAI, which comes with a $10 billion investment.\",\n            \"createdAt\": \"2023-03-26T18:34:05.414Z\",\n            \"updatedAt\": \"2023-03-26T18:34:05.414Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"mepritam\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-mtl3ko\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:33:53.412Z\",\n            \"updatedAt\": \"2023-03-26T18:33:54.549Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"bglytn\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-tjk1m1\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:33:51.071Z\",\n            \"updatedAt\": \"2023-03-26T18:33:51.071Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"rwpsfe\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"article01-yj20n6\",\n            \"title\": \"Article01\",\n            \"description\": \"Article01\",\n            \"body\": \"Article body\",\n            \"createdAt\": \"2023-03-26T18:20:46.695Z\",\n            \"updatedAt\": \"2023-03-26T18:20:46.695Z\",\n            \"tagList\": [\n                \"tag1\",\n                \"tag2\"\n            ],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"mjtebf\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        },\n        {\n            \"slug\": \"about-chatgpt-8yz21l\",\n            \"title\": \"About ChatGPT\",\n            \"description\": \"An article on chatGPT\",\n            \"body\": \"ChatGPT was released just last year and is already transforming multiple industries. Its release has led to Google’s management team declaring a “code red” situation\\nThe chatbot was introduced by OpenAI, a San Francisco-based startup that has received another $10 billion in funding from Microsoft as the major tech giants get competitive in the field of AI\\nWhile ChatGPT is popular with some, others are concerned about the impact this tool will have on education and other industries. We explore what could be next for this disruptive technology\\nYou’ve likely heard about ChatGPT, a revolutionary new tool that has made headlines since it was released late last year. The AI-powered chatbot generates responses based on a prompt of user inputs. Users have utilized ChatGPT for everything from help with homework to writing poems. Some see ChatGPT as a direct threat to Google’s $149 billion search engine business, an area Google has been the leading player in for years. Microsoft recently confirmed an extension of its partnership with OpenAI, which comes with a $10 billion investment.\",\n            \"createdAt\": \"2023-03-26T18:18:54.326Z\",\n            \"updatedAt\": \"2023-03-26T18:18:54.326Z\",\n            \"tagList\": [],\n            \"favorited\": false,\n            \"favoritesCount\": 0,\n            \"author\": {\n                \"username\": \"mepritam\",\n                \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n                \"following\": false\n            }\n        }\n    ],\n    \"articlesCount\": 29341\n}"
+				}
+			]
+		},
+		{
+			"name": "favorite articles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "qa-task.backbasecloud.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "jwtauthorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTExNjY2LCJpYXQiOjE2Nzk5Mjc2NjZ9.B1zv6SCXcG_PSU6NDfSbdxwxvUsMI_nbkgKLuPoFMdI"
+					},
+					{
+						"key": "origin",
+						"value": "https://qa-task.backbasecloud.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://qa-task.backbasecloud.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://qa-task.backbasecloud.com/api/articles/test-article-title-2-e0z39u/favorite",
+					"protocol": "https",
+					"host": [
+						"qa-task",
+						"backbasecloud",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles",
+						"test-article-title-2-e0z39u",
+						"favorite"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "favorite articles",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "qa-task.backbasecloud.com"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-IN,en;q=0.9,hi-IN;q=0.8,hi;q=0.7"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "dnt",
+								"value": "1"
+							},
+							{
+								"key": "jwtauthorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjE3NzA5MjA5MmNmYzYwNjhlZTFiYiIsInVzZXJuYW1lIjoicnVwYWRoeWF5IiwiZXhwIjoxNjg1MTExNjY2LCJpYXQiOjE2Nzk5Mjc2NjZ9.B1zv6SCXcG_PSU6NDfSbdxwxvUsMI_nbkgKLuPoFMdI"
+							},
+							{
+								"key": "origin",
+								"value": "https://qa-task.backbasecloud.com"
+							},
+							{
+								"key": "referer",
+								"value": "https://qa-task.backbasecloud.com/"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "https://qa-task.backbasecloud.com/api/articles/test-article-title-2-e0z39u/favorite",
+							"protocol": "https",
+							"host": [
+								"qa-task",
+								"backbasecloud",
+								"com"
+							],
+							"path": [
+								"api",
+								"articles",
+								"test-article-title-2-e0z39u",
+								"favorite"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.14.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Mar 2023 14:50:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "414"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19e-+btU5cEGo+jemOIOownNxw\""
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"article\": {\n        \"slug\": \"test-article-title-2-e0z39u\",\n        \"title\": \"test article title 2\",\n        \"description\": \"this is about test article 2\",\n        \"body\": \"this is test description for 2\",\n        \"createdAt\": \"2023-03-27T14:45:54.939Z\",\n        \"updatedAt\": \"2023-03-27T14:50:38.687Z\",\n        \"tagList\": [],\n        \"favorited\": false,\n        \"favoritesCount\": 0,\n        \"author\": {\n            \"username\": \"rupadhyay\",\n            \"image\": \"https://static.productionready.io/images/smiley-cyrus.jpg\",\n            \"following\": false\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
