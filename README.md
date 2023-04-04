@@ -25,6 +25,11 @@ Go to the project directory Backbase-QA-assignment
 ```bash
   cd Backbase-QA-assignment
 ```
+Switch to branch qa-assignment-rajendra-upadhyay
+
+```bash
+  git checkout qa-assignment-rajendra-upadhyay
+```
 To run api test cases/suite
 
 ```bash
