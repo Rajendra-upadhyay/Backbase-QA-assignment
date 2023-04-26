@@ -132,6 +132,14 @@
             <version>${selenium-java-version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.awaitility/awaitility -->
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
