@@ -18,9 +18,6 @@ public class BaseTest {
 
     @BeforeSuite
     public void getJWTAuthorizationToken() {
-        logger.info("===================================================");
-        logger.info("execution started for api test >>>");
-        logger.info("execution started for getJWTAuthorizationToken >>>");
         User payload = RestUtils.getLoginPayload();
         Response response = RestUtils.performPost(Endpoints.LOGIN_USER,payload);
         logger.info("get jwt authorization token with end point "+Endpoints.LOGIN_USER+" with payload "+"\n"+payload +" and response is>>> \n"+ response.prettyPrint());
